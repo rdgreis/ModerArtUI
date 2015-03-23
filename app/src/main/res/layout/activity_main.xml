@@ -5,63 +5,60 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <Space
+    <SurfaceView
         android:layout_width="250px"
-        android:layout_height="200px"
+        android:layout_height="400px"
+        android:id="@+id/box1"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="#ffff5b5d"
-        android:visibility="visible"
-        android:id="@+id/box1" />
+        android:background="#ff6275ff" />
 
-    <Space
+    <SurfaceView
         android:layout_width="fill_parent"
-        android:layout_height="350px"
-        android:layout_alignParentTop="true"
+        android:layout_height="300px"
+        android:id="@+id/box2"
+        android:layout_alignTop="@+id/box1"
         android:layout_toRightOf="@+id/box1"
         android:layout_toEndOf="@+id/box1"
-        android:id="@+id/box2"
-        android:visibility="visible"
-        android:background="#ffff5b5d" />
+        android:background="#ff6cff67" />
 
-    <Space
+    <SurfaceView
         android:layout_width="fill_parent"
-        android:layout_height="250px"
-        android:layout_below="@+id/box2"
-        android:layout_alignRight="@+id/box2"
-        android:layout_alignEnd="@+id/box2"
+        android:layout_height="400px"
         android:id="@+id/box3"
-        android:visibility="visible"
+        android:layout_below="@+id/box2"
+        android:layout_alignLeft="@+id/box2"
+        android:layout_alignStart="@+id/box2"
         android:background="#ffffffff" />
 
-    <Space
-        android:layout_width="250px"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/box1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/box4"
-        android:visibility="visible"
-        android:background="#ffff5b5d" />
-
-    <Space
+    <SurfaceView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/box3"
-        android:layout_toRightOf="@+id/box4"
-        android:layout_toEndOf="@+id/box4"
+        android:id="@+id/box4"
+        android:layout_below="@+id/box1"
+        android:layout_alignRight="@+id/box1"
+        android:layout_alignEnd="@+id/box1"
+        android:background="#ffff357f"
+        android:layout_above="@+id/seekbar" />
+
+    <SurfaceView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:id="@+id/box5"
-        android:visibility="visible"
-        android:background="#ffff5b5d" />
+        android:layout_below="@+id/box3"
+        android:layout_alignLeft="@+id/box3"
+        android:layout_alignStart="@+id/box3"
+        android:background="#fffffc61"
+        android:layout_above="@+id/seekbar" />
 
     <SeekBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/seekBar"
+        android:id="@+id/seekbar"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/box5"
-        android:layout_alignEnd="@+id/box5" />
+        android:layout_alignEnd="@+id/box5"
+        android:indeterminate="false" />
+
 </RelativeLayout>
