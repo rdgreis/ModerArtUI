@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">ModerArtUI</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">More Information</string>
     <string name="menu_text">More Information</string>
-    <string name="dialog_message">TESTE</string>
+    <string name="dialog_message">Inspired by the works of artists such as Piet Mondrian and Ben Nicholson.\n\nClick Bellow to learn more!</string>
+    <string name="not_now">Not now</string>
+    <string name="visit_moma">Visit MOMA</string>
+    <string name="title_activity_more_information">TESTE</string>
 </resources>
